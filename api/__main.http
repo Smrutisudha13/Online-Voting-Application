@@ -1,0 +1,9 @@
+@token=
+@host=http://localhost:5000
+@hostPath={{host}}
+@serverPath={{host}}/api
+@authorization=Bearer {{token}}
+@contentType=application/json
+
+###
+GET {{hostPath}}/

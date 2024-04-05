@@ -1,0 +1,29 @@
+@token=
+@host=http://localhost:5000
+@serverPath={{host}}
+@authorization=Bearer {{token}}
+@contentType=application/json
+
+###
+POST {{serverPath}}/user/login
+content-type: 'application/json'
+
+{
+   "username": "ssougat",
+   "password": "Zoozoo@1604"
+}
+###
+POST {{serverPath}}/user/signup
+content-type: 'application/json'
+
+{
+   "firstName": "sample",
+   "lastName": "Username",
+   "email": "ssp21@gmail.com",
+   "phone": "+91 9439543478", 
+   "password": "1234",
+   "age": "19",
+   "gender": "male",
+   "username": "Susername",
+   "birthDate": "1999-07-04"
+}

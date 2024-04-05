@@ -1,0 +1,110 @@
+/* header.css */
+
+.header-container {
+  background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom right, #3498db, #e74c3c);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px; /* Add padding to the navbar */
+}
+
+.name {
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px; 
+  font-size: 20px;/* Reduce the margin for the name */
+}
+
+.name:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #070707;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 10px;
+  display: none; /* Hide the dropdown by default */
+}
+
+.name:hover .dropdown {
+  display: block; /* Show the dropdown on name hover */
+}
+
+.logout-button,
+.dropdown-link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transitions */
+}
+
+.logout-button:hover,
+.dropdown-link:hover {
+  background-color: #333; /* Change background color on hover */
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s; /* Add smooth color transition */
+}
+
+.nav-buttons a:hover {
+  color: #f39c12; /* Change text color on hover */
+}
+
+.nav-links {
+  color: black;
+}
+
+.nav-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Additional styles for the dropdown links */
+.dropdown-link {
+  display: block;
+  text-align: left;
+  margin: 5px 0;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-link:hover {
+  background-color: #333;
+}
+.nav-buttons button {
+  background-color: #3498db; /* Blue color */
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transitions */
+  border-radius: 25px; /* Make the button rounder */
+  padding: 10px 20px; /* Increase padding to make it bigger */
+  font-size: 16px; /* Increase font size */
+}
+
+.nav-buttons button:hover {
+  background-color: #2980b9; /* Deep blue color on hover */
+}

@@ -1,0 +1,5 @@
+export FLASK_APP=root
+export FLASK_DEBUG=true
+export FLASK_ENV=development
+clear
+flask run --host=0.0.0.0

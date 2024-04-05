@@ -1,0 +1,17 @@
+@token=
+@host=http://localhost:5000
+@serverPath={{host}}
+@authorization=Bearer {{token}}
+@contentType=application/json
+
+###
+GET {{serverPath}}/sample/get
+
+###
+POST {{serverPath}}/sample/post
+
+###
+PUT {{serverPath}}/sample/put
+
+###
+DELETE {{serverPath}}/sample/delete
